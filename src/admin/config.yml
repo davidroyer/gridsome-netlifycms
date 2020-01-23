@@ -16,3 +16,25 @@ collections:
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+
+
+  - label: "Pages"
+    name: "pages"
+    create: true
+    # editor:
+    #   preview: true
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "src/data/pages/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: About Page Content, name: content, widget: markdown}
+
+      - label: "Home Page"
+        name: "home"
+        file: "src/data/pages/home.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Home Page Content, name: content, widget: markdown}

@@ -1,12 +1,18 @@
 <template>
   <Layout>
-    <h1>About Us Updated</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <h1 v-text="about.title"></h1>
+    <div>{{about.content}}</div>
   </Layout>
 </template>
 
 <script>
+import about from '@/data/pages/about.yml'
+
 export default {
+  data: () => ({
+    about
+  }),
+
   metaInfo: {
     title: 'About us'
   }
