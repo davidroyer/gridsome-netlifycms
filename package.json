@@ -2,8 +2,8 @@
   "name": "gridsome-netlifycms",
   "private": true,
   "scripts": {
+    "dev": "gridsome develop",
     "build": "gridsome build",
-    "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
